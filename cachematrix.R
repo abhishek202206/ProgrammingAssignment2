@@ -41,7 +41,6 @@ cacheSolve <- function(x=makeCacheMatrix(1:4, nrow=2, ncol=2), ...) { ##special 
   calculatedInverse <-  solve(matrixToSolve)
   x$setInverse(calculatedInverse)
   calculatedInverse
-  ## whatever the case, set the value of the inverse (NULL if something went wrong)
-  message("Setting the value of inverse to:") 
-  x$setInverse(calculatedInverse)
+
+  
 }
